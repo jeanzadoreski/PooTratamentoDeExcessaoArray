@@ -1,5 +1,5 @@
 package cursojava.excessao;
-
+//teste
 public class ExcessaoProcessarNotas extends Exception {
 	
 	public ExcessaoProcessarNotas(String erro) {
