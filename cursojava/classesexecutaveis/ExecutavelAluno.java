@@ -60,25 +60,25 @@ public class ExecutavelAluno {
 			aluno1 = new Aluno() ;
 			String nome = JOptionPane.showInputDialog("Qual o nome do aluno? " +qtd);
 			String idade = JOptionPane.showInputDialog("Qual a idade? ");
-			String dataNascimento = JOptionPane.showInputDialog("Qual a data de nascimento? ");
+			/*String dataNascimento = JOptionPane.showInputDialog("Qual a data de nascimento? ");
 			String rg = JOptionPane.showInputDialog("Qual o RG? ");
 			String cpf = JOptionPane.showInputDialog("Qual o cpf? ");
 			String mae = JOptionPane.showInputDialog("Qual o nome da mãe? ");
 			String pai = JOptionPane.showInputDialog("Qual o nome do pai? ");
 			String dtMatriula = JOptionPane.showInputDialog("Qual a data da matricula? ");
 			String serie = JOptionPane.showInputDialog("Qual a serie? ");
-			String nomeEscola = JOptionPane.showInputDialog("Qual o nome da escola? "); 
+			String nomeEscola = JOptionPane.showInputDialog("Qual o nome da escola? ");*/ 
 			
 			aluno1.setNome(nome);
 			aluno1.setIdade(Integer.valueOf(idade));
-			aluno1.setDataNascimento(dataNascimento);
+			/*aluno1.setDataNascimento(dataNascimento);
 			aluno1.setRegistroGeral(rg);
 			aluno1.setNumeroCpf(cpf);
 			aluno1.setNomeMae(mae);
 			aluno1.setNomePai(pai);
 			aluno1.setDataMatricula(dtMatriula);
 			aluno1.setSerie(serie);
-			aluno1.setNomeEscola(nomeEscola); 
+			aluno1.setNomeEscola(nomeEscola); */
 			
 			
 		/*	aluno1.getDisciplina().setNota1(Double.parseDouble(nota1));
@@ -233,15 +233,15 @@ public class ExecutavelAluno {
 		
 		System.out.println("------------------ Listas dos Aprovados -----------------------");
 		for (Aluno aluno : maps.get(StatusAluno.APROVADO)) {
-			System.out.println("Aluno = " + aluno.getNome()+ "Resultado = " + aluno.getAlunoAprovado2() + " com média de " + aluno.getMediaNota());
+			System.out.println("Aluno = " + aluno.getNome()+ " Resultado = " + aluno.getAlunoAprovado2() + " com média de " + aluno.getMediaNota());
 		}
 		System.out.println("------------------ Listas dos Reprovados -----------------------");
 		for (Aluno aluno : maps.get(StatusAluno.REPROVADO)) {
-			System.out.println("Aluno = " + aluno.getNome()+ "Resultado = " + aluno.getAlunoAprovado2() + " com média de " + aluno.getMediaNota());
+			System.out.println("Aluno = " + aluno.getNome()+ " Resultado = " + aluno.getAlunoAprovado2() + " com média de " + aluno.getMediaNota());
 		}
 		System.out.println("------------------ Listas dos Recuperação -----------------------");
 		for (Aluno aluno : maps.get(StatusAluno.RECUPERACAO)) {
-			System.out.println("Aluno = " + aluno.getNome()+ "Resultado = " + aluno.getAlunoAprovado2() + " com média de " + aluno.getMediaNota());
+			System.out.println("Aluno = " + aluno.getNome()+ " Resultado = " + aluno.getAlunoAprovado2() + " com média de " + aluno.getMediaNota());
 		}
 		
 		/*Agora temos um objeto real na memória*/
