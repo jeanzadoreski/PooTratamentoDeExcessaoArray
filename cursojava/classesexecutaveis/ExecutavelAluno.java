@@ -114,7 +114,7 @@ public class ExecutavelAluno {
 				String notaDisciplina = JOptionPane.showInputDialog("Nota da disciplina " +pos+ " ?");
 				Disciplina disciplina02 = new Disciplina();
 				disciplina02.setDisciplina(nomeDisciplina);
-				disciplina02.setNota(Double.valueOf(notaDisciplina));
+			//	disciplina02.setNota(Double.valueOf(notaDisciplina));
 				
 				aluno1.getDisciplina().add(disciplina02);
 			}
@@ -195,7 +195,7 @@ public class ExecutavelAluno {
 				trocar.setNome("Aluno foi trocado");
 				Disciplina disciplina = new Disciplina();
 				disciplina.setDisciplina("Matematica");
-				disciplina.setNota(98);
+				//disciplina.setNota(98);
 				trocar.getDisciplina().add(disciplina);
 				alunos.set(pos, trocar);
 				aluno = alunos.get(pos);
